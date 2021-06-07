@@ -1,6 +1,10 @@
 .DS_Store
 .dart_tool/
 
+include
+android/src/main/jniLibs/
+ios/opencv2.framework/
+
 .packages
 .pub/
 
