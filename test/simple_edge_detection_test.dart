@@ -19,13 +19,11 @@ void main() {
 
   test('detectEdges', () async {
     expect(
-      await EdgeDetection.detectEdges('non-existing-path'),
-      EdgeDetectionResult(
-        topLeft: Offset(0,0),
-        topRight: Offset(1,0),
-        bottomLeft: Offset(0,1),
-        bottomRight: Offset(1,1)
-      )
-    );
+        await EdgeDetection.detectEdges('non-existing-path'),
+        EdgeDetectionResult(
+            topLeft: const Offset(0, 0),
+            topRight: const Offset(1, 0),
+            bottomLeft: const Offset(0, 1),
+            bottomRight: const Offset(1, 1)));
   });
 }
